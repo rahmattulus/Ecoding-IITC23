@@ -1,0 +1,1272 @@
+html {
+  scroll-behavior: smooth;
+  background-color: black;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  /* padding-bottom: 20px; */
+  font-family: 'Bebas Neue', sans-serif;
+}
+
+/* Navbar */
+nav {
+  background-color: rgba(192, 56, 255, 0.356);
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 2rem;
+  z-index: 10;
+  backdrop-filter: blur(3px);
+  position: fixed;
+  top: 0;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  list-style: none;
+  flex: 1;
+  /* Memberikan fleksibilitas pada menu list */
+  justify-content: center;
+  /* Menengahkan item list */
+}
+
+nav ul li a {
+  text-decoration: none;
+  font-family: "System-UI", sans-serif;
+  color: #ffffff;
+  font-weight: 600;
+  padding: 8px 0;
+  transition: all;
+  transition-duration: 300ms;
+  border-bottom: 1px solid rgba(255, 68, 0, 0);
+}
+
+nav ul li a:hover {
+  color: rgb(0, 174, 255);
+  border-bottom: 1px solid rgb(0, 174, 255);
+}
+
+
+.menu-icon {
+  /* background-color: tomato;
+  width: 10px;
+  height: 10px; */
+  /* color: #4e54c8; */
+  font-size: 28px;
+  display: none;
+  position: absolute;
+  /* Mengatur posisi ikon menu */
+  right: 2rem;
+  /* Jarak dari kanan */
+  top: 1rem;
+  /* Jarak dari atas (sesuaikan dengan kebutuhan) */
+  cursor: pointer;
+  /* Menunjukkan ikon menu dapat diklik */
+  /* z-index: 2; */
+}
+
+/* Main section */
+.context h3 {
+  text-align: center;
+  color: white;
+  font-size: 24px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: -20px;
+}
+
+.context p {
+  text-align: center;
+  color: white;
+  font-size: 27px;
+
+}
+
+
+/* Animasi text Judul*/
+.tracking-in-contract {
+  -webkit-animation: tracking-in-contract 0.9s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+  animation: tracking-in-contract 0.9s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+
+@-webkit-keyframes tracking-in-contract {
+  0% {
+    letter-spacing: 1em;
+    opacity: 0;
+  }
+
+  40% {
+    opacity: 0.6;
+  }
+
+  100% {
+    letter-spacing: normal;
+    opacity: 1;
+  }
+}
+
+@keyframes tracking-in-contract {
+  0% {
+    letter-spacing: 1em;
+    opacity: 0;
+  }
+
+  40% {
+    opacity: 0.6;
+  }
+
+  100% {
+    letter-spacing: normal;
+    opacity: 1;
+  }
+}
+
+/* Animasi sub-judul */
+.text-focus-in {
+  -webkit-animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+  animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+}
+
+@-webkit-keyframes text-focus-in {
+  0% {
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0;
+  }
+
+  100% {
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes text-focus-in {
+  0% {
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0;
+  }
+
+  100% {
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+    opacity: 1;
+  }
+}
+
+/* Animasi background */
+
+/* @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap'); */
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+/* .main-section{
+  position: relative;
+  top: -190px;
+} */
+
+#stars {
+  position: relative;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+}
+
+.context {
+  position: absolute;
+  margin-top: 15%;
+  margin-bottom: 5%;
+  width: 100%;
+  /* height: 100vh; */
+  /* top: 10%; */
+  /* bottom: 10%; */
+  z-index: 1;
+}
+
+.context h1 {
+  text-align: center;
+  color: white;
+  font-size: 100px;
+  font-size: 200px;
+}
+
+/* Caption text */
+.deskripsi {
+  display: flex;
+  justify-content: center;
+  margin-top: -15px;
+  padding-top: 100px;
+  gap: 5%;
+  z-index: 1;
+}
+
+.judul-des {
+  display: flex;
+  /* position: relative; */
+  /* flex-direction: column; */
+  justify-content: center;
+  /* align-items: center; */
+  text-align: center;
+}
+
+.sidebar {
+  display: flex;
+  align-items: center;
+}
+
+.judul-sidebar {
+  flex: 1 1 100%;
+  width: 100%;
+  text-align: center;
+  justify-content: center;
+  font-size: 3rem;
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+  text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.4);
+}
+
+.slider {
+  display: inline-block;
+  /*Inline-block || flex*/
+  height: 1.5em;
+  /**/
+  overflow: hidden;
+  vertical-align: middle;
+  mask-image: linear-gradient(transparent, white, white, white, transparent);
+  mask-type: luminance;
+  mask-mode: alpha;
+
+}
+
+.words {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  animation-name: slice;
+  animation-timing-function: ease-out;
+  animation-iteration-count: infinite;
+  animation-duration: 7s;
+}
+
+.word {
+  display: block;
+  line-height: 1.3em;
+  text-align: left;
+  /*center || left  */
+  /* margin-top: 8px; */
+}
+
+@keyframes slice {
+
+  0%,
+  27% {
+    transform: translateY(5%);
+  }
+
+  33%,
+  60% {
+    transform: translateY(-29%);
+  }
+
+  66%,
+  93% {
+    transform: translateY(-62%);
+  }
+
+  100% {
+    transform: translateY(-75%);
+  }
+
+}
+
+.deskripsi {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 3;
+  background-image: url(img/background3.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.isides {
+  color: white;
+  justify-content: center;
+}
+
+.ag-courses_box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  padding: 50px 0;
+}
+
+.ag-courses_item {
+  -ms-flex-preferred-size: calc(33.33333% - 30px);
+  /* flex-basis: calc(33.33333% - 30px); */
+  /* -ms-flex-preferred-size: 100%; */
+  flex-basis: 50%;
+  margin: 0 15px 30px;
+  overflow: hidden;
+  border-radius: 28px;
+}
+
+.ag-courses-item_link {
+  display: block;
+  padding: 30px 20px;
+  background-color: #121212;
+  overflow: hidden;
+  position: relative;
+}
+
+.ag-courses-item_link:hover,
+.ag-courses-item_link:hover .ag-courses-item_date {
+  text-decoration: none;
+  color: #fff;
+}
+
+.ag-courses-item_link:hover .ag-courses-item_bg {
+  -webkit-transform: scale(10);
+  -ms-transform: scale(10);
+  transform: scale(10);
+}
+
+.ag-courses-item_title {
+  align-items: center;
+  /* justify-content: center; */
+  text-align: center;
+  min-height: 87px;
+  /* min-width: 250px;
+  margin: 0 0 25px; */
+
+  z-index: 1;
+  overflow: hidden;
+
+  font-weight: bold;
+  font-size: 50px;
+  color: #fff;
+
+  cursor: pointer;
+  z-index: 2;
+  position: relative;
+}
+
+.ag-courses-item_date-box {
+  font-size: 18px;
+  color: #fff;
+
+  z-index: 2;
+  position: relative;
+}
+
+.ag-courses-item_date {
+  font-weight: bold;
+  color: #f9b234;
+
+  -webkit-transition: color 0.5s ease;
+  -o-transition: color 0.5s ease;
+  transition: color 0.5s ease;
+}
+
+.ag-courses-item_bg {
+  height: 128px;
+  width: 128px;
+  background-color: #952aff;
+  z-index: 1;
+  position: absolute;
+  top: -75px;
+  right: -75px;
+  border-radius: 50%;
+  -webkit-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.ag-courses_item:nth-child(2n) .ag-courses-item_bg {
+  background-color: #4c49ea;
+}
+
+.ag-courses_item:nth-child(3n) .ag-courses-item_bg {
+  background-color: #cd3e94;
+}
+
+
+.modal-container {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(3px);
+  z-index: 3;
+}
+
+/* Hide the modal by default */
+.modal {
+  display: none;
+  position: fixed;
+  overflow-y: auto;
+  top: 15%;
+  width: 25%;
+  height: 75%;
+  border-radius: 10px;
+  right: 25%;
+  background-color: #FFD700;
+  z-index: 4;
+}
+
+/* Style the modal content */
+.modal-content {
+  padding: 20px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.modal-content h2 {
+  text-align: center;
+  font-size: 25px;
+}
+
+.modal-content p {
+  margin-top: 13px;
+  text-align: left;
+  font-size: 14px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.modal-content ol {
+  margin-top: 13px;
+  text-align: left;
+  font-size: 14px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/* Style the close button */
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 2rem;
+  cursor: pointer;
+  z-index: 2;
+  color: rgb(0, 0, 0);
+}
+
+.cursor {
+  cursor: pointer;
+  color: rgb(18, 66, 224);
+}
+
+.penerapan{
+  padding: 10%;
+  background-image: url(img/background4.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.penerapan h2{
+  text-align: center; 
+  padding: 5%;
+  color: white;
+  font-size: 3rem;
+}
+
+.penerapan .box{
+  display: flex; 
+  gap: 3%; 
+  margin-bottom: 5%;
+  justify-content: center; 
+  color: white;
+}
+
+.penerapan .box .card{
+  background: linear-gradient(to bottom, #2a9ae0 35%, #00a8ff 35%, #00a8ff 100% ); 
+  width: 40vh;
+  max-width: 300px; 
+  text-align: center; 
+  border-radius: 15px; 
+  height: 575px;
+}
+
+.title-card {
+  display: flex;
+  flex-direction: column;
+  gap: 10%;
+  height: 35%;  
+  justify-content: center; 
+  align-items: center; 
+}
+
+.title-card img {
+  display: flex;
+  position: absolute;
+  width: 75px;
+  height: 75px;
+  margin-bottom: 105px;
+}
+
+.title-card h3 {
+  margin-top: 75px;
+  font-size: 2rem;
+}
+
+.isi-card{
+  height: 75%; 
+  display: flex; 
+  text-align: left; 
+  margin-left: 10px; 
+  margin-right: 10px; 
+  margin-top: 25px;
+}
+
+.isi-card p{
+  font-size: 1.5rem;
+}
+
+.header-text h1 {
+  font-size: 1.5rem;
+}
+
+.header-text p {
+  font-size: 15px;
+}
+
+.crypto-background {
+  position: absolute;
+}
+
+.jenis {
+  align-items: center;
+  justify-content: center;
+  z-index: -1;
+}
+
+.crypto-list {
+  background-image: url(img/background5.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0;
+  /* padding: 10%; */
+  z-index: -5;
+}
+
+.crypto-list h2 {
+  /* margin-top: 10%; */
+  padding-top: 10%;
+  text-align: center;
+  color: white;
+  font-size: 3rem;
+}
+
+.crypto-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  cursor: pointer;
+  height: 100%; /* Sesuaikan dengan tinggi container Anda */
+}
+
+.crypto-description {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #e6b30d;
+  padding: 10px;
+  border-radius: 10px;
+  z-index: 1;
+  width: 60%; /* Sesuaikan lebar sesuai preferensi Anda */
+}
+
+.crypto-title:hover + .crypto-description {
+  display: block;
+}
+
+.poin {
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  padding: 10%;
+  height: 25vh;
+  border-radius: solid rgb(255, 255, 255);
+  z-index: 0;
+}
+
+.crypto {
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+}
+
+.content-image {
+  background-repeat: no-repeat;
+  background-size: 700px;
+  width: 50%;
+  /* height: 700px; */
+  margin-top: 90px;
+  /* margin-left: 10px; */
+  transition: background-image 0.3s;
+  transform: translateX(0px);
+  animation: float 6s ease-out infinite;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-60px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.content h1 {
+  color: #ffffff;
+  font-size: 5rem;
+}
+
+.content p {
+  color: rgb(141, 141, 141);
+  font-weight: 100;
+}
+
+.image-select img {
+  width: 100px;
+  padding: 10px;
+  width: 200px;
+  height: 200px;
+}
+
+.image-select div {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* AUTHOR */
+
+.contain {
+  position: relative;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 440px;
+  grid-gap: 40px;
+  padding: 10%;
+  margin-top: 10%;
+}
+
+.contain .card-maker {
+  position: relative;
+  background: #ccc;
+  overflow: hidden;
+  border-radius: 10px;
+  transition: 0.5s;
+}
+
+.contain .card-maker:hover {
+  transform: translateY(-20px);
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2);
+}
+
+.contain .card-maker .img-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: 0.5s;
+}
+
+.contain .card-maker:hover .img-box {
+  opacity: 0.5s;
+}
+
+.contain .card-maker .img-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.contain .card-maker .profil {
+  position: absolute;
+  width: 100%;
+  height: 60%;
+  bottom: -100%;
+  padding: 20px;
+  padding-top: 60px;
+  box-sizing: border-box;
+  text-align: center;
+  transition: 0.5s;
+}
+
+.contain .card-maker:hover .profil {
+  bottom: 0;
+}
+
+.contain .card-maker:nth-child(1) .profil {
+  background: linear-gradient(0deg, #00b1ed, transparent);
+}
+
+.contain .card-maker:nth-child(2) .profil {
+  background: linear-gradient(0deg, #381864, transparent);
+}
+
+.contain .card-maker:nth-child(3) .profil {
+  background: linear-gradient(0deg, #004db7, transparent);
+}
+
+.contain .card-maker .profil h2 {
+  margin: 0 0 10px;
+  padding: 0;
+  color: white;
+  font-size: 20px;
+}
+
+.contain .card-maker .profil h2 {
+  color: white;
+  font-size: 25px;
+}
+
+.contain .card-maker .profil p {
+  margin: 0;
+  padding: 0;
+  color: white;
+  font-size: 16px;
+}
+
+.contain .card-maker .profil ul {
+  display: flex;
+  margin: 20px 0 0;
+  padding: 0;
+  align-items: center;
+  justify-content: center;
+}
+
+.contain .card-maker .profil ul li {
+  list-style: none;
+}
+
+.contain .card-maker .profil ul li a {
+  color: #fff;
+  padding: 0 10px;
+  font-size: 18px;
+  transition: 0.5s;
+}
+
+
+.footer {
+  position: relative;
+  width: 100%;
+  background: #3586ff;
+  min-height: 100px;
+  padding: 20px 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.menu {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+  flex-wrap: wrap;
+}
+
+.menu__item {
+  list-style: none;
+}
+
+.menu__link {
+  font-size: 1.2rem;
+  color: #fff;
+  margin: 0 10px;
+  display: inline-block;
+  transition: 0.5s;
+  text-decoration: none;
+  opacity: 0.75;
+  font-weight: 300;
+}
+
+.menu__link:hover {
+  opacity: 1;
+}
+
+.footer p {
+  color: #fff;
+  margin: 15px 0 10px 0;
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.wave {
+  position: absolute;
+  top: -100px;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background: url("https://i.ibb.co/wQZVxxk/wave.png");
+  background-size: 1000px 100px;
+}
+
+.wave#wave1 {
+  z-index: 1000;
+  opacity: 1;
+  bottom: 0;
+  animation: animateWaves 4s linear infinite;
+}
+
+.wave#wave2 {
+  z-index: 999;
+  opacity: 0.5;
+  bottom: 10px;
+  animation: animate 4s linear infinite !important;
+}
+
+.wave#wave3 {
+  z-index: 1000;
+  opacity: 0.2;
+  bottom: 15px;
+  animation: animateWaves 3s linear infinite;
+}
+
+.wave#wave4 {
+  z-index: 999;
+  opacity: 0.7;
+  bottom: 20px;
+  animation: animate 3s linear infinite;
+}
+
+@keyframes animateWaves {
+  0% {
+    background-position-x: 1000px;
+  }
+
+  100% {
+    background-positon-x: 0px;
+  }
+}
+
+@keyframes animate {
+  0% {
+    background-position-x: -1000px;
+  }
+
+  100% {
+    background-positon-x: 0px;
+  }
+}
+
+/* CSS untuk menampilkan ikon menu saat layar lebih kecil dari 768px */
+
+@media only screen and (max-width: 2560px) {
+  .context {
+    margin-bottom: 20%;
+  }
+
+  /* .deskripsi{
+    margin-top: 30%;
+  } */
+
+  .header-text h1 {
+    font-size: 3rem;
+  }
+
+  .header-text p {
+    font-weight: 75;
+  }
+
+  .modal-content {
+    margin-left: 50px;
+  }
+
+  .modal-content h2 {
+    font-size: 4rem;
+  }
+
+  .modal-content p {
+    font-size: 2rem;
+  }
+
+  .modal-content ol {
+    font-size: 2rem;
+  }
+
+  .modal {
+    width: 50%;
+    height: 50%;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .image-select img {
+    /* padding: 10px; */
+    /* width: 300px;
+    height: 300px; */
+    margin-right: 10px;
+  }
+
+  .poin {
+    height: 25vh;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+
+  #stars {
+    position: static;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+  }
+
+  .context {
+    width: 100%;
+    height: 50%;
+    position: absolute;
+    top: 25vh;
+    bottom: 25vh;
+  }
+
+  .context h1 {
+    text-align: center;
+    color: white;
+    font-size: 100px;
+  }
+
+  .context h3 {
+    text-align: center;
+    color: white;
+    font-size: 12px;
+  }
+
+  .context p {
+    text-align: center;
+    color: white;
+    font-size: 14px;
+  }
+
+  .judul-sidebar {
+    flex: 1 1 100%;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    font-size: 1.7rem;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.4);
+  }
+
+  .card {
+    width: 250px;
+    height: 150px;
+  }
+
+  .isi-card p{
+    font-size: 1.25rem;
+  }
+
+  .modal {
+    width: 60%;
+    height: 60%;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .header-text h1 {
+    font-size: 2rem;
+  }
+
+  .header-text p {
+    font-weight: 75;
+    font-size: 15px;
+  }
+
+  .image-select img {
+    /* padding: 10px; */
+    width: 150px;
+    height: 150px;
+    margin-right: 10%;
+  }
+
+}
+
+@media only screen and (max-width: 576px) {
+  nav {
+    width: 100%;
+  }
+
+  nav ul.hidden {
+    flex-wrap: wrap;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    /* Efek animasi saat muncul/menyembunyikan menu list */
+    transform: translateY(-100%);
+    /* Menu list awalnya disembunyikan di atas */
+  }
+
+  nav ul {
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    transform: translateY(0);
+    /* Menu list ditampilkan */
+  }
+
+  nav ul li:last-of-type {
+    padding-bottom: 8px;
+  }
+
+  .menu-icon {
+    color: #4e54c8;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    z-index: 2;
+  }
+
+  .context {
+    width: 100%;
+    height: 50%;
+    position: absolute;
+    top: 25vh;
+    bottom: 100vh;
+  }
+
+  .context h1 {
+    text-align: center;
+    color: white;
+    font-size: 75px;
+  }
+
+  .context h3 {
+    text-align: center;
+    color: white;
+    font-size: 10px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .context p {
+    text-align: center;
+    color: white;
+    font-size: 8px;
+  }
+
+  .judul-sidebar {
+    flex: 1 1 100%;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.4);
+  }
+
+  .modal ol{
+    font-size: 12px;
+  }
+
+  .penerapan{
+    height: 150vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .penerapan h2{
+    font-size: 2rem;
+  }
+
+  .penerapan .box{
+    display: flex; 
+    flex-direction: column;
+    height: 100vh;
+  }
+
+  .title-card img{
+    width: 50px;
+    height: 50px;
+    margin-bottom: 0;
+  }
+
+  .title-card h3{
+    font-size: 15px;
+  }
+
+  .isi-card p{
+    font-size: 11px;
+  }
+
+  .header-text h1 {
+    font-size: 1rem;
+  }
+
+  .header-text p {
+    font-weight: 75;
+    font-size: 10px;
+  }
+
+  .ag-courses_item {
+    -ms-flex-preferred-size: 50%;
+    flex-basis: 50%;
+  }
+
+  .ag-courses-item_title {
+    min-height: 30px;
+    line-height: 1;
+
+    font-size: 15px;
+  }
+
+  .ag-courses-item_link {
+    padding: 22px 40px;
+  }
+
+  .ag-courses-item_date-box {
+    font-size: 16px;
+  }
+
+  .modal {
+    width: 60%;
+    height: 60%;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15vh;
+  }
+
+  .modal-content h2 {
+    font-size: 15px;
+  }
+
+  .modal-content p {
+    font-size: 10px;
+  }
+
+  .image-select img {
+    /* padding: 10px; */
+    width: 150px;
+    height: 150px;
+    padding: 10%;
+  }
+
+  .header-text p{
+    font-size: 8px;
+  }
+
+  .crypto-container h2{
+    font-size: 2rem;
+  }
+
+  .crypto-container p{
+    font-size: 12px;
+  }
+
+  .contain {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 50px;
+    margin-top: 20%;
+  }
+
+  .card-maker {
+    height: 150px;
+    width: 150px;
+  }
+
+  .contain .card-maker .profil h2 {
+    margin: 0 0 5px;
+    padding: 0;
+    color: white;
+    font-size: 10px;
+  }
+
+  .contain .card-maker .profil h2 {
+    color: white;
+    font-size: 8px;
+  }
+
+  .contain .card-maker .profil p {
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-size: 8px;
+  }
+
+  .contain .card-maker .profil {
+    width: 100%;
+    height: 60%;
+    bottom: -100%;
+    padding: 20px;
+    padding-top: 20px;
+    /* box-sizing: border-box;
+    text-align: center;
+    transition: 0.5s; */
+  }
+
+  .contain .card-maker .profil ul {
+    /* display: flex; */
+    margin: 10px 0 0;
+    /* padding: 0;
+    align-items: center;
+    justify-content: center; */
+  }
+
+  .contain .card-maker .profil ul li a {
+    color: #fff;
+    padding: 0 5px;
+    font-size: 10px;
+    transition: 0.5s;
+  }
+
+  footer{
+    margin-top: 40%;
+  }
+}

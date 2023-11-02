@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css" />
+  <title>BLOCKCHAIN</title>
+  <link rel="icon" href="img/Bitcoin.png">
+</head>
+
+<body>
+  <nav>
+    <div id="menu-icon" class="menu-icon">
+      <i class="fas fa-bars"></i>
+    </div>
+    <ul id="menu-list" class="hidden">
+      <li>
+        <a href="#home">Home</a>
+      </li>
+      <li>
+        <a href="#desk">Description</a>
+      </li>
+      <li>
+        <a href="#imple">implementation</a>
+      </li>
+      <li>
+        <a href="#crypto">Cryptocurrency</a>
+      </li>
+      <li>
+        <a href="#tim">Team</a>
+      </li>
+    </ul>
+  </nav>
+
+  <div class="main-title" id="home">
+    <!-- main Section -->
+    <div class="context">
+      <h3 class="tracking-in-contract">WELCOME TO OUR WEBSITE</h3>
+      <h1 class="tracking-in-contract">BLOCKCHAIN</h1>
+      <p class="text-focus-in">Mengenal lebih lanjut mengenai teknologi masa depan, Blockchain</p>
+    </div>
+    <canvas id="stars"></canvas>
+  </div>
+
+  <div class="deskripsi" id="desk">
+    <!-- <img src="img/background2.jpg" alt="background2"> -->
+    <div class="juduldes">
+      <div class="sidebar">
+        <h1 class="judul-sidebar">
+          BLOCKCHAIN
+          <div class="slider">
+            <ul class="words">
+              <li class="word">What's that?</li>
+              <li class="word">History?</li>
+              <li class="word">Function?</li>
+            </ul>
+          </div>
+        </h1>
+      </div>
+    </div>
+    <div class="isides">
+      <div class="ag-courses_item">
+        <a class="ag-courses-item_link" id="openModalBtn1">
+          <div class="ag-courses-item_bg"></div>
+
+          <div class="ag-courses-item_title">
+            Definition
+          </div>
+        </a>
+      </div>
+
+      <div class="ag-courses_item">
+        <a class="ag-courses-item_link" id="openModalBtn2">
+          <div class="ag-courses-item_bg"></div>
+
+          <div class="ag-courses-item_title">
+            History
+          </div>
+        </a>
+      </div>
+
+      <div class="ag-courses_item">
+        <a class="ag-courses-item_link" id="openModalBtn3">
+          <div class="ag-courses-item_bg"></div>
+
+          <div class="ag-courses-item_title">
+            Function
+          </div>
+        </a>
+      </div>
+
+      <div class="modal-container" id="container"></div>
+      <div id="myModal1" class="modal">
+        <div class="modal-content" style="color: black">
+          <span class="close" data-modal="myModal1">&times;</span>
+          <h2>DEFINITION</h2>
+          <p>Blockchain adalah teknologi yang digunakan untuk menyimpan dan mengamankan data dalam bentuk rantai blok.
+            Analogi yang mudah dipahami untuk blockchain adalah seperti buku besar digital yang dapat diakses oleh semua
+            orang,
+            tetapi tidak dapat diubah atau dihapus. Mari kita jelaskan lebih detail dengan analogi berikut:</p>
+
+          <p>Bayangkan Anda sedang bermain permainan domino dengan teman-teman Anda.
+            Setiap kali salah satu dari Anda menambahkan potongan domino baru ke permainan,
+            Anda mencatatnya dalam buku besar yang dapat dilihat oleh semua orang. Buku besar ini adalah "blockchain."
+          </p>
+
+          <p>Setiap potongan domino yang Anda tambahkan ke permainan adalah "blok" dalam blockchain.
+            Blok ini berisi informasi tentang transaksi yang telah dilakukan, seperti siapa yang menambahkan potongan
+            domino,
+            jenis potongan domino yang ditambahkan, dan waktu tambahan potongan domino tersebut.</p>
+
+          <p>Setelah blok selesai, Anda dan teman-teman Anda harus menyetujui bahwa informasi di dalamnya benar dan
+            valid.
+            Setelah setuju, blok tersebut dikunci, dan tidak dapat diubah lagi.
+            Ini mirip dengan cara blockchain mengamankan data dengan menggunakan teknologi kriptografi sehingga tidak
+            dapat diubah atau dihapus tanpa persetujuan semua orang yang terlibat.</p>
+
+          <p>Ketika Anda ingin menambahkan potongan domino berikutnya ke permainan,
+            Anda harus membuat blok baru yang berisi informasi tentang transaksi terbaru.
+            Blok ini kemudian ditambahkan ke belakang blok sebelumnya, membentuk rantai blok.
+            Ini adalah alasan mengapa disebut "blockchain" - karena informasi yang dicatat dalam blok-blok ini membentuk
+            rantai yang tidak dapat dipisahkan.</p>
+
+          <p>Keuntungan utama dari blockchain adalah transparansi dan keamanannya.
+            Semua orang dapat melihat informasi dalam buku besar ini,
+            dan setiap perubahan harus disetujui oleh jaringan yang luas sebelum dapat terjadi.
+            Ini membuatnya cocok untuk digunakan dalam berbagai aplikasi,
+            termasuk mata uang kripto seperti Bitcoin, logistik, manajemen rantai pasokan, dan banyak lagi.</p>
+        </div>
+      </div>
+
+      <div class="modal-container" id="container"></div>
+      <div id="myModal2" class="modal">
+        <div class="modal-content" style="color: black">
+          <span class="close" data-modal="myModal2">&times;</span>
+          <h2>HISTORY</h2>
+          <p> Konsep dasar yang menjadi landasan untuk teknologi blockchain mungkin telah ada sebelum Bitcoin, tetapi
+            Bitcoin adalah aplikasi pertama yang menggabungkan konsep ini dalam sebuah sistem yang praktis. Konsep ini
+            diperkenalkan oleh seseorang yang menggunakan nama samaran "Satoshi Nakamoto" melalui whitepaper berjudul
+            "Bitcoin: A Peer-to-Peer Electronic Cash System" yang diterbitkan pada tanggal 31 Oktober 2008.</p>
+
+          <p>Pada tahun 2009, Bitcoin menjadi mata uang digital pertama yang menggunakan teknologi blockchain untuk
+            mencatat transaksi. Blockchain Bitcoin berfungsi sebagai buku besar terdesentralisasi yang mencatat semua
+            transaksi Bitcoin yang dilakukan oleh pengguna.</p>
+
+          <p>Bitcoin dan teknologi blockchain segera mendapatkan perhatian dan mulai digunakan secara luas oleh
+            komunitas kripto. Semakin banyak mata uang digital (cryptocurrency) lainnya yang menggunakan teknologi
+            blockchain untuk mencatat transaksi mereka.</p>
+
+          <p>Pada tahun 2015, Vitalik Buterin memperkenalkan platform Ethereum yang memungkinkan pengguna untuk membuat
+            kontrak pintar (smart contracts) menggunakan teknologi blockchain. Ethereum membawa konsep blockchain ke
+            tingkat berikutnya dengan kemampuan untuk menjalankan kode di atasnya, mengizinkan pengembangan aplikasi
+            terdesentralisasi yang lebih kompleks.</p>
+
+          <p>Selama beberapa tahun berikutnya, blockchain digunakan di berbagai industri di luar dunia kripto. Ini
+            mencakup penggunaan dalam rantai pasokan, logistik, kesehatan, pendidikan, energi terbarukan, dan banyak
+            lagi.</p>
+
+          <p>Seiring berjalannya waktu, fork dari blockchain Bitcoin muncul, seperti Bitcoin Cash dan Bitcoin SV, yang
+            menghasilkan berbagai varian blockchain dengan karakteristik yang berbeda. Ethereum juga mengalami fork,
+            menghasilkan Ethereum Classic.</p>
+
+          <p>Selain Bitcoin dan Ethereum, banyak platform blockchain lainnya seperti Ripple, Cardano, Polkadot, dan
+            Solana muncul dengan berbagai inovasi dan fokus penggunaan yang berbeda.</p>
+
+          <p>Banyak perusahaan besar mulai mengadopsi teknologi blockchain untuk meningkatkan efisiensi dan keamanan
+            operasi mereka. Hyperledger, yang dikembangkan oleh The Linux Foundation, adalah salah satu proyek terkenal
+            dalam lingkup ini.</p>
+
+          <p> Saat ini, blockchain terus berkembang dan digunakan dalam berbagai kasus penggunaan, termasuk keuangan,
+            logistik, identitas digital, dan banyak lagi. Potensi blockchain untuk mengubah cara kita bertransaksi dan
+            berinteraksi secara digital masih belum sepenuhnya tercapai. Seiring dengan perkembangan teknologi ini,
+            blockchain terus menjadi pusat perhatian dalam dunia teknologi, keuangan, dan industri lainnya. Inovasi
+            terus berlanjut, dan kita dapat mengharapkan melihat lebih banyak penggunaan blockchain dalam berbagai aspek
+            kehidupan di masa depan.</p>
+        </div>
+      </div>
+
+      <div class="modal-container" id="container"></div>
+      <div id="myModal3" class="modal">
+        <div class="modal-content" style="color: black">
+          <span class="close" data-modal="myModal3">&times;</span>
+          <h2>FUNCTION</h2>
+          <p>Blockchain adalah sebuah teknologi yang mendasari berbagai jenis cryptocurrency, seperti Bitcoin, dan telah
+            berkembang untuk memiliki banyak penggunaan di berbagai sektor. Fungsi lengkap dari blockchain mencakup
+            beberapa aspek utama: </p>
+          <ol start="1">
+            <li><b>Pencatatan Transaksi</b>: Blockchain berfungsi sebagai buku besar terdesentralisasi yang mencatat
+              semua transaksi yang terjadi dalam jaringan. Setiap transaksi dikumpulkan dalam blok-blok dan diurutkan
+              secara kronologis.</li>
+            <li><b>Desentralisasi</b>: Salah satu fitur utama blockchain adalah desentralisasi. Ini berarti tidak ada
+              otoritas sentral yang mengendalikan atau memfasilitasi transaksi. Sebaliknya, data transaksi tersebar di
+              seluruh jaringan pemakai (nodes).</li>
+            <li><b>Keamanan</b>: Blockchain menggunakan kriptografi untuk mengamankan data transaksi. Transaksi yang
+              sudah tereksekusi tidak dapat diubah atau dihapus tanpa persetujuan mayoritas pemakai dalam jaringan, yang
+              membuatnya sangat sulit untuk dimanipulasi.</li>
+            <li><b>Ketahanan Terhadap Serangan</b>: Blockchain memiliki tingkat ketahanan yang tinggi terhadap berbagai
+              jenis serangan, termasuk serangan DDoS dan upaya pemalsuan data.</li>
+            <li><b>Verifikasi Publik</b>: Informasi dalam blockchain bersifat publik dan dapat diverifikasi oleh siapa
+              saja. Ini memungkinkan transparansi tinggi, yang merupakan salah satu alasan mengapa blockchain digunakan
+              dalam rantai pasokan dan sektor lainnya.</li>
+            <li><b>Cryptocurrency</b>: Blockchain digunakan sebagai dasar untuk Cryptocurrency seperti Bitcoin dan
+              Ethereum. Ini memungkinkan transaksi keuangan digital yang aman dan terdesentralisasi.</li>
+            <li><b>Keamanan Identitas</b>: Blockchain dapat digunakan untuk mengamankan identitas online. Ini berguna
+              dalam pengelolaan akses dan penyimpanan data pribadi.</li>
+            <li><b>Pemungutan Suara Elektronik</b>: Blockchain digunakan dalam pemungutan suara elektronik untuk
+              memastikan keamanan dan integritas pemilihan.</li>
+            <li><b>Industri Supply Chain</b>: Blockchain digunakan dalam manajemen rantai pasokan untuk melacak produk
+              dari sumber hingga konsumen, memastikan keaslian, dan meningkatkan transparansi.
+            </li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="penerapan" id="imple">
+    <h2>Penerapan Blockchain</h2>
+    <div class="box">
+      <div class="card">
+        <div class="title-card">
+          <img src="img/blockchain.png" alt="logo">
+          <h3>Supply Chain Management</h3>
+        </div>
+        <div class="isi-card">
+          <p>Blockchain memungkinkan pelacakan transparan dan real-time atas pergerakan produk dari sumber hingga
+            konsumen akhir.
+            Ini membantu mengidentifikasi masalah cepat, mengurangi pemalsuan, dan meningkatkan efisiensi rantai
+            pasokan.</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="title-card">
+          <img src="img/icons8-banking-48.png" alt="logo">
+          <h3>Perbankan dan Keuangan</h3>
+        </div>
+        <div class="isi-card">
+          <p>Dalam sektor perbankan, blockchain digunakan untuk mentransfer uang secara aman dan dengan biaya rendah melalui batas negara tanpa perlu perantara. 
+            Selain itu, kontrak pintar (smart contracts) dijalankan otomatis sesuai dengan kondisi yang telah ditentukan.</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="title-card">
+          <img src="img/stethoscope_6655517.png" alt="logo">
+          <h3>Kesehatan</h3>
+        </div>
+        <div class="isi-card">
+          <p>Dalam bidang kesehatan, blockchain digunakan untuk menyimpan catatan medis pasien yang aman dan dapat diakses dengan izin, 
+            sehingga memudahkan dokter dan pasien untuk berbagi informasi penting.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="jenis">
+    <div class="crypto-list" id="crypto">
+      <div class="crypto-container">
+        <h2 class="crypto-title">CRYPTOCURRENCY</h2>
+        <p class="crypto-description">Cryptocurrency adalah bentuk mata uang digital yang menggunakan teknologi enkripsi untuk mengamankan transaksi dan mengendalikan penciptaan unit tambahan dari mata uang tersebut. Cryptocurrency beroperasi secara terdesentralisasi dan menggunakan teknologi blockchain untuk mencatat semua transaksi.</p>
+      </div>
+      <!-- <h2>CRYPTOCURRENCY</h2> -->
+      <div class="poin">
+        <div class="crypto">
+          <div class="header-text" style="color: white;">
+            <h1>BITCOIN</h1>
+            <p>Bitcoin adalah cryptocurrency pertama yang diciptakan dan diperkenalkan oleh seseorang atau kelompok yang
+              menggunakan nama samaran "Satoshi Nakamoto" pada tahun 2008.
+              Ini adalah bentuk uang digital atau mata uang kripto yang beroperasi tanpa otoritas sentral seperti bank
+              atau pemerintah.
+              Bitcoin adalah salah satu jenis aset digital yang paling dikenal dan paling berharga di dunia saat ini.
+            </p>
+          </div>
+        </div>
+        <div class="content-image" id="bike">
+          <div class="image-select">
+            <div id="image">
+              <img src="img/Bitcoin.png" alt="image">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="poin">
+        <div class="content-image" id="bike">
+          <div class="image-select">
+            <div id="image">
+              <img src="img/ethereum_icon.png" alt="image">
+            </div>
+          </div>
+        </div>
+        <div class="crypto">
+          <div class="header-text" style="color: white;">
+            <h1>ETHEREUM</h1>
+            <p>Ethereum adalah sebuah platform perangkat lunak terdesentralisasi yang memungkinkan pembuatan dan
+              eksekusi kontrak pintar (smart contracts) serta pengembangan aplikasi terdesentralisasi (dApps) di
+              atasnya.
+              Ethereum menggunakan teknologi blockchain untuk menciptakan sebuah lingkungan yang memungkinkan pengembang
+              untuk membangun aplikasi yang berjalan tanpa adanya otoritas sentral atau intermediasi.</p>
+          </div>
+        </div>
+      </div>
+      <div class="poin">
+        <div class="crypto">
+          <div class="header-text" style="color: white;">
+            <h1>BINANCE</h1>
+            <p>Binance Coin (BNB) adalah cryptocurrency yang pertama kali diperkenalkan oleh Binance,
+              salah satu bursa kriptokurensi terbesar di dunia.
+              Binance Coin awalnya dirilis sebagai bagian dari ICO (Initial Coin Offering) untuk mendanai platform
+              Binance pada tahun 2017.
+              Sejak itu, BNB telah berkembang menjadi salah satu kriptokurensi yang paling populer dan berharga di
+              pasar.</p>
+          </div>
+        </div>
+        <div class="content-image" id="bike">
+          <div class="image-select">
+            <div id="image">
+              <img src="img/binance.png" alt="image" style="max-width: 300px; max-height: 300px;">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="poin">
+        <div class="content-image" id="bike">
+          <div class="image-select">
+            <div id="image">
+              <img src="img/dogecoin-png-8.png" alt="image" style="max-width: 300px; max-height: 300px;">
+            </div>
+          </div>
+        </div>
+        <div class="crypto">
+          <div class="header-text" style="color: white;">
+            <h1>DOGECOIN</h1>
+            <p>Dogecoin (DOGE) adalah salah satu cryptocurrency yang paling dikenal dan populer.
+              Cryptocurrency ini awalnya diciptakan sebagai lelucon dan parodi pada tahun 2013 oleh dua insinyur
+              perangkat lunak,
+              Billy Markus dan Jackson Palmer. Dogecoin mengambil nama dan logo dari meme internet yang terkenal pada
+              waktu itu, yaitu "Doge,"
+              yang menampilkan gambar anjing Shiba Inu dengan kata-kata dalam bahasa Inggris yang salah dieja dan gaya
+              bahasa yang humoris.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div>
+
+  </div>
+
+  <!-- author -->
+
+  <div class="contain" id="tim">
+    <div class="card-maker">
+      <div class="img-box">
+        <img src="img/rahmat1.JPG" alt="">
+      </div>
+      <div class="profil">
+        <h2>Eko Rahmat T.S <br>
+          <span>ANGGOTA</span>
+        </h2>
+        <p>SMK Negeri 1 Purwokerto</p>
+        <ul>
+          <li>
+            <a href="https://instagram.com/rahmattullus?igshid=NzZlODBkYWE4Ng==">
+              <i class="fab fa-instagram" aria-hidden="true"></i>
+            </a>
+            <a href="https://github.com/rahmattulus">
+              <i class="fab fa-github" aria-hidden="true"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card-maker">
+      <div class="img-box">
+        <img src="img/Joshua.jpg" alt="">
+      </div>
+      <div class="profil">
+        <h2>Joshua Seweningaji Y.P <br>
+          <span>KETUA</span>
+        </h2>
+        <p>SMK Negeri 1 purwokerto</p>
+        <ul>
+          <li>
+            <a href="https://www.instagram.com/joshua_syp/">
+              <i class="fab fa-instagram" aria-hidden="true"></i>
+            </a>
+            <a href="https://github.com/Joshuaputra17">
+              <i class="fab fa-github" aria-hidden="true"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="card-maker">
+      <div class="img-box">
+        <img src="img/Fahruz.jpeg " alt="">
+      </div>
+      <div class="profil">
+        <h2>Shobiburrahmat al F.Z<br>
+          <span>ANGGOTA</span>
+        </h2>
+        <p>SMK Negeri 1 Purwokerto</p>
+        <ul>
+          <li>
+            <a href="https://www.instagram.com/im_potentate/">
+              <i class="fab fa-instagram" aria-hidden="true"></i>
+            </a>
+            <a href="https://github.com/liventAndDeadnt">
+              <i class="fab fa-github" aria-hidden="true"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <script src="style.js"></script>
+</body>
+<footer class="footer">
+  <div class="waves">
+    <div class="wave" id="wave1"></div>
+    <div class="wave" id="wave2"></div>
+    <div class="wave" id="wave3"></div>
+    <div class="wave" id="wave4"></div>
+  </div>
+  <ul class="menu">
+    <li class="menu__item"><a class="menu__link" href="#home">Home</a></li>
+    <li class="menu__item"><a class="menu__link" href="#desk">Description</a></li>
+    <li class="menu__item"><a class="menu__link" href="#crypto">Cryptocurrency</a></li>
+    <li class="menu__item"><a class="menu__link" href="#tim">Team</a></li>
+
+  </ul>
+  <p>&copy;2023 Ecoding; | All Rights Reserved</p>
+</footer>
+
+</html>
